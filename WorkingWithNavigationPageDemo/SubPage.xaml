@@ -8,6 +8,8 @@
                    FontSize="25"
                 VerticalOptions="CenterAndExpand" 
                 HorizontalOptions="CenterAndExpand" />
+            <Button Text="Next" Clicked="Button_Clicked"></Button>
+            <Button Text="Home" Clicked="BtnHome"></Button>
             
         </StackLayout>
     </ContentPage.Content>

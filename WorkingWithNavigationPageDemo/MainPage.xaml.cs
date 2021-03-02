@@ -8,21 +8,29 @@ using Xamarin.Forms;
 
 namespace WorkingWithNavigationPageDemo
 {
+    /// <summary>
+    /// MainPage is called from the App class within a NavigationPage (see App.cs)
+    /// MainPage has a button when pressed uses the Navigation property to Push the the stack a SubPage which displays.
+    /// </summary>
     public partial class MainPage : ContentPage
     {
         public MainPage()
         {
             InitializeComponent();
-            Title = "Main Page";
+          
         }
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
             await Navigation.PushAsync(new SubPage(), true);
             
-            
+                      
+        }
+        protected override void OnDisappearing()
+        {
+           
         }
 
-        
+
     }
 }
